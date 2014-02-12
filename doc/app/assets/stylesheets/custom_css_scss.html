@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+
+<title>custom.css.scss - RDoc Documentation</title>
+
+<link type="text/css" media="screen" href="../../../rdoc.css" rel="stylesheet">
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "../../../";
+</script>
+
+<script type="text/javascript" charset="utf-8" src="../../../js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../../js/navigation.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../../js/search_index.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../../js/search.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../../js/searcher.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../../js/darkfish.js"></script>
+
+
+<body class="file">
+<nav id="metadata">
+  <nav id="home-section" class="section">
+  <h3 class="section-header">
+    <a href="../../../index.html">Home</a>
+    <a href="../../../table_of_contents.html#classes">Classes</a>
+    <a href="../../../table_of_contents.html#methods">Methods</a>
+  </h3>
+</nav>
+
+
+  <nav id="search-section" class="section project-section" class="initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <h3 class="section-header">
+      <input type="text" name="search" placeholder="Search" id="search-field"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </h3>
+  </form>
+
+  <ul id="search-results" class="initially-hidden"></ul>
+</nav>
+
+
+  
+
+  <div id="project-metadata">
+    <nav id="fileindex-section" class="section project-section">
+  <h3 class="section-header">Pages</h3>
+
+  <ul>
+  
+    <li class="file"><a href="../../../Gemfile.html">Gemfile</a>
+  
+    <li class="file"><a href="../../../Gemfile_lock.html">Gemfile.lock</a>
+  
+    <li class="file"><a href="../../../README_rdoc.html">README</a>
+  
+    <li class="file"><a href="../../../Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="../../../app/assets/javascripts/application_js.html">application.js</a>
+  
+    <li class="file"><a href="../../../app/assets/javascripts/sessions_js_coffee.html">sessions.js.coffee</a>
+  
+    <li class="file"><a href="../../../app/assets/javascripts/static_pages_js_coffee.html">static_pages.js.coffee</a>
+  
+    <li class="file"><a href="../../../app/assets/javascripts/users_js_coffee.html">users.js.coffee</a>
+  
+    <li class="file"><a href="../../../app/assets/stylesheets/application_css.html">application.css</a>
+  
+    <li class="file"><a href="../../../app/assets/stylesheets/custom_css_scss.html">custom.css.scss</a>
+  
+    <li class="file"><a href="../../../app/assets/stylesheets/sessions_css_scss.html">sessions.css.scss</a>
+  
+    <li class="file"><a href="../../../app/assets/stylesheets/static_pages_css_scss.html">static_pages.css.scss</a>
+  
+    <li class="file"><a href="../../../app/assets/stylesheets/users_css_scss.html">users.css.scss</a>
+  
+    <li class="file"><a href="../../../config_ru.html">config.ru</a>
+  
+    <li class="file"><a href="../../../doc/created_rid.html">created.rid</a>
+  
+    <li class="file"><a href="../../../log/development_log.html">development.log</a>
+  
+    <li class="file"><a href="../../../log/test_log.html">test.log</a>
+  
+    <li class="file"><a href="../../../public/404_html.html">404.html</a>
+  
+    <li class="file"><a href="../../../public/422_html.html">422.html</a>
+  
+    <li class="file"><a href="../../../public/500_html.html">500.html</a>
+  
+    <li class="file"><a href="../../../public/favicon_ico.html">favicon.ico</a>
+  
+    <li class="file"><a href="../../../public/robots_txt.html">robots</a>
+  
+    <li class="file"><a href="../../../readme_md.html">readme</a>
+  
+    <li class="file"><a href="../../../tmp/pids/server_pid.html">server.pid</a>
+  
+  </ul>
+</nav>
+
+    <nav id="classindex-section" class="section project-section">
+  <h3 class="section-header">Class and Module Index</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="../../../ActiveModel.html">ActiveModel</a>
+  
+    <li><a href="../../../ActiveRecord.html">ActiveRecord</a>
+  
+    <li><a href="../../../AddIndexToUsersEmail.html">AddIndexToUsersEmail</a>
+  
+    <li><a href="../../../AddPasswordDigestToUsers.html">AddPasswordDigestToUsers</a>
+  
+    <li><a href="../../../AddRememberTokenToUsers.html">AddRememberTokenToUsers</a>
+  
+    <li><a href="../../../ApplicationController.html">ApplicationController</a>
+  
+    <li><a href="../../../ApplicationHelper.html">ApplicationHelper</a>
+  
+    <li><a href="../../../CreateUsers.html">CreateUsers</a>
+  
+    <li><a href="../../../Logger.html">Logger</a>
+  
+    <li><a href="../../../Object.html">Object</a>
+  
+    <li><a href="../../../SampleApp.html">SampleApp</a>
+  
+    <li><a href="../../../SampleApp/Application.html">SampleApp::Application</a>
+  
+    <li><a href="../../../SessionsController.html">SessionsController</a>
+  
+    <li><a href="../../../SessionsHelper.html">SessionsHelper</a>
+  
+    <li><a href="../../../StaticPagesController.html">StaticPagesController</a>
+  
+    <li><a href="../../../StaticPagesHelper.html">StaticPagesHelper</a>
+  
+    <li><a href="../../../User.html">User</a>
+  
+    <li><a href="../../../UsersController.html">UsersController</a>
+  
+    <li><a href="../../../UsersHelper.html">UsersHelper</a>
+  
+  </ul>
+</nav>
+
+  </div>
+</nav>
+
+<div id="documentation" class="description">
+  
+<p>@import “bootstrap”;</p>
+
+<pre>mixins, variables, etc.</pre>
+
+<p>$grayMediumLight: eaeaea;</p>
+
+<p>@mixin box_sizing {</p>
+
+<pre>-moz-box-sizing: border-box;
+-webkit-box-sizing: border-box;
+box-sizing: border-box;</pre>
+
+<p>}</p>
+
+<pre>universal</pre>
+
+<p>html {</p>
+
+<pre>overflow-y: scroll;</pre>
+
+<p>}</p>
+
+<p>body {</p>
+
+<pre>padding-top: 60px;</pre>
+
+<p>}</p>
+
+<p>section {</p>
+
+<pre>overflow: auto;</pre>
+
+<p>}</p>
+
+<p>textarea {</p>
+
+<pre>resize: vertical;</pre>
+
+<p>}</p>
+
+<p>.center {</p>
+
+<pre>text-align: center;
+h1 {
+  margin-bottom: 10px;
+}</pre>
+
+<p>}</p>
+
+<p>/* typography */</p>
+
+<p>h1, h2, h3, h4, h5, h6 {</p>
+
+<pre>line-height: 1;</pre>
+
+<p>}</p>
+
+<p>h1 {</p>
+
+<pre>font-size: 3em;
+letter-spacing: -2px;
+margin-bottom: 30px;
+text-align: center;</pre>
+
+<p>}</p>
+
+<p>h2 {</p>
+
+<pre>font-size: 1.2em;
+letter-spacing: -1px;
+margin-bottom: 30px;
+text-align: center;
+font-weight: normal;
+color: $grayLight;</pre>
+
+<p>}</p>
+
+<p>p {</p>
+
+<pre>font-size: 1.1em;
+line-height: 1.7em;</pre>
+
+<p>}</p>
+
+<p>/* header */</p>
+
+<p>logo {</p>
+
+<pre>float: left;
+margin-right: 10px;
+font-size: 1.7em;
+color: white;
+text-transform: uppercase;
+letter-spacing: -1px;
+padding-top: 9px;
+font-weight: bold;
+line-height: 1;
+&amp;:hover {
+  color: white;
+  text-decoration: none;
+}</pre>
+
+<p>}</p>
+
+<p>/* footer */</p>
+
+<p>footer {</p>
+
+<pre>margin-top: 45px;
+padding-top: 5px;
+border-top: 1px solid $grayMediumLight;
+color: $grayLight;
+a {
+  color: $gray;
+  &amp;:hover {
+    color: $grayDarker;
+  }
+}
+small {
+  float: left;
+}
+ul {
+  float: right;
+  list-style: none;
+  li {
+    float: left;
+    margin-left: 10px;
+  }
+}</pre>
+
+<p>}</p>
+
+<p>/* miscellaneous */</p>
+
+<p>.debug_dump {</p>
+
+<pre>clear: both;
+float: left;
+width: 100%;
+margin-top: 45px;
+@include box_sizing;</pre>
+
+<p>}</p>
+
+<p>/* sidebar */</p>
+
+<p>aside {</p>
+
+<pre>section {
+  padding: 10px 0;
+  border-top: 1px solid $grayLighter;
+  &amp;:first-child {
+    border: 0;
+    padding-top: 0;
+  }
+  span {
+    display: block;
+    margin-bottom: 3px;
+    line-height: 1;
+  }
+  h1 {
+    font-size: 1.4em;
+    text-align: left;
+    letter-spacing: -1px;
+    margin-bottom: 3px;
+    margin-top: 0px;
+  }
+}</pre>
+
+<p>}</p>
+
+<p>.gravatar {</p>
+
+<pre>float: left;
+margin-right: 10px;</pre>
+
+<p>}</p>
+
+<p>/* forms */</p>
+
+<p>input, textarea, select, .uneditable-input {</p>
+
+<pre>border: 1px solid #bbb;
+width: 100%;
+margin-bottom: 15px;
+@include box_sizing;</pre>
+
+<p>}</p>
+
+<p>input {</p>
+
+<pre>height: auto !important;</pre>
+
+<p>} error_explanation {</p>
+
+<pre>color: #f00;
+ul {
+  list-style: none;
+  margin: 0 0 18px 0;
+}</pre>
+
+<p>}</p>
+
+<p>.field_with_errors {</p>
+
+<pre>@extend .control-group;
+@extend .error;</pre>
+
+<p>}</p>
+
+</div>
+
+
+
+<footer id="validator-badges">
+  <p><a href="http://validator.w3.org/check/referer">[Validate]</a>
+  <p>Generated by <a href="https://github.com/rdoc/rdoc">RDoc</a> 4.0.0.
+  <p>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish Rdoc Generator</a> 3.
+</footer>
+
